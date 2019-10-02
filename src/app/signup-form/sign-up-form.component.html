@@ -18,6 +18,8 @@
           <div *ngIf="usernameValidator.errors.minlength">
             Username should be minimum {{usernameValidator.errors.minlength.requiredLength}} character.
           </div>
+          <div *ngIf="usernameValidator.errors.cannotContainSpace">Username cannot contain space</div>
+          <div *ngIf="usernameValidator.errors.shouldBeUnique">Username should be unique</div>
         </div>
       </div>
       <div class="form-group">
